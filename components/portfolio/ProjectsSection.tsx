@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ExternalLink, Github, Play } from 'lucide-react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button';
+// Removed UI Button; use native button
 
 const projects = [
   {
@@ -125,35 +125,31 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
           transition={{ duration: 0.3 }}
         >
           {project.links.live && (
-            <Button
-              size="sm"
-              className="bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm"
+            <button
+              className="px-3 py-2 rounded bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm"
               onClick={() => window.open(project.links.live, '_blank')}
             >
               <ExternalLink className="w-4 h-4 mr-2" />
               Live
-            </Button>
+            </button>
           )}
           {project.links.github && (
-            <Button
-              size="sm"
-              variant="outline"
-              className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
+            <button
+              className="px-3 py-2 rounded border border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
               onClick={() => window.open(project.links.github, '_blank')}
             >
               <Github className="w-4 h-4 mr-2" />
               Code
-            </Button>
+            </button>
           )}
           {project.links.demo && (
-            <Button
-              size="sm"
-              className="bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
+            <button
+              className="px-3 py-2 rounded bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
               onClick={() => window.open(project.links.demo, '_blank')}
             >
               <Play className="w-4 h-4 mr-2" />
               Demo
-            </Button>
+            </button>
           )}
         </motion.div>
 
@@ -268,14 +264,13 @@ export function ProjectsSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <Button
-            size="lg"
+          <button
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-            onClick={() => window.open('https://github.com/alexchen', '_blank')}
+            onClick={() => window.open('https://github.com/gireeshp', '_blank')}
           >
-            <Github className="w-5 h-5 mr-2" />
+            <Github className="w-5 h-5 mr-2 inline" />
             View All Projects
-          </Button>
+          </button>
         </motion.div>
       </div>
     </section>

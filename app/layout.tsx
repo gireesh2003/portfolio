@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Navigation } from '@/components/portfolio/Navigation';
-import { Toaster } from 'sonner';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -23,13 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <div className="min-h-screen bg-black">
-          <Navigation />
-          <main className="relative">
-            {children}
-          </main>
-        </div>
-        <Toaster position="top-right" richColors />
+        <Providers>
+          <div className="min-h-screen bg-black">
+            <Navigation />
+            <main className="relative">
+              {children}
+            </main>
+          </div>
+        </Providers>
       </body>
     </html>
   );

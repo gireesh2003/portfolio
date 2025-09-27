@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+// Replaced UI library button with native button
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,7 +61,7 @@ export function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              AC
+              GP
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -99,18 +99,17 @@ export function Navigation() {
             </div>
 
             {/* Mobile Menu Toggle */}
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-white hover:text-gray-300"
+              className="md:hidden text-white hover:text-gray-300 p-2 rounded"
+              aria-label="Toggle menu"
             >
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6" />
               ) : (
                 <Menu className="w-6 h-6" />
               )}
-            </Button>
+            </button>
           </div>
         </div>
 

@@ -3,9 +3,6 @@
 import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
 
 const contactInfo = [
@@ -193,57 +190,57 @@ export function ContactSection() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <Label htmlFor="name" className="text-white font-medium mb-2 block">
+                  <label htmlFor="name" className="text-white font-medium mb-2 block">
                     Name
-                  </Label>
-                  <Input
+                  </label>
+                  <input
                     id="name"
                     name="name"
                     type="text"
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="bg-gray-700/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="email" className="text-white font-medium mb-2 block">
+                  <label htmlFor="email" className="text-white font-medium mb-2 block">
                     Email
-                  </Label>
-                  <Input
+                  </label>
+                  <input
                     id="email"
                     name="email"
                     type="email"
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-gray-700/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
                     placeholder="your@email.com"
                   />
                 </div>
               </div>
 
               <div>
-                <Label htmlFor="subject" className="text-white font-medium mb-2 block">
+                <label htmlFor="subject" className="text-white font-medium mb-2 block">
                   Subject
-                </Label>
-                <Input
+                </label>
+                <input
                   id="subject"
                   name="subject"
                   type="text"
                   required
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="bg-gray-700/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+                  className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
                   placeholder="What's this about?"
                 />
               </div>
 
               <div>
-                <Label htmlFor="message" className="text-white font-medium mb-2 block">
+                <label htmlFor="message" className="text-white font-medium mb-2 block">
                   Message
-                </Label>
+                </label>
                 <textarea
                   id="message"
                   name="message"
@@ -256,7 +253,7 @@ export function ContactSection() {
                 />
               </div>
 
-              <Button
+              <button
                 type="submit"
                 disabled={isLoading}
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
@@ -272,7 +269,7 @@ export function ContactSection() {
                     <span>Send Message</span>
                   </div>
                 )}
-              </Button>
+              </button>
             </form>
           </motion.div>
         </div>
