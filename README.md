@@ -134,4 +134,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 Gireesh Pandya - [@your-twitter](https://twitter.com/your-twitter) - gireeshpandya41@gmail.com
 
-Project Link: [https://github.com/gireeshp/portfolio](https://github.com/gireeshp/portfolio)
+Project Link: [https://github.com/gireesh2003/portfolio](https://github.com/gireesh2003/portfolio)
