@@ -114,19 +114,19 @@ export function AboutSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/50"
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/50 hover:border-emerald-500/30 transition-all duration-300"
             >
-              <h3 className="text-2xl font-bold text-white mb-6">Technologies I Love</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Technologies I Master</h3>
               <div className="flex flex-wrap gap-3">
                 {technologies.map((tech, index) => (
                   <motion.span
                     key={tech}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full text-sm font-medium text-blue-300 border border-blue-500/30 backdrop-blur-sm"
+                    className="px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full text-sm font-medium text-emerald-300 border border-emerald-500/30 backdrop-blur-sm hover:bg-gradient-to-r hover:from-emerald-500/40 hover:to-teal-500/40 transition-all duration-300"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
                     viewport={{ once: true }}
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.1 }}
                   >
                     {tech}
                   </motion.span>
