@@ -86,16 +86,16 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 0.8 }}
         >
           <button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-green-500/50"
             onClick={() => scrollToSection('#projects')}
           >
-            View My Work
+            Explore My Work
           </button>
           <button
-            className="border border-white/30 text-white hover:bg-white/10 hover:border-white/50 font-semibold px-8 py-4 rounded-xl backdrop-blur-sm"
+            className="border-2 border-emerald-400/50 text-white hover:bg-emerald-600/20 hover:border-emerald-400 font-semibold px-8 py-4 rounded-xl backdrop-blur-sm transition-all duration-300 hover:scale-105"
             onClick={() => scrollToSection('#contact')}
           >
-            Get In Touch
+            Let's Connect
           </button>
         </motion.div>
         
