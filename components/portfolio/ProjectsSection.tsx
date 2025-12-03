@@ -149,38 +149,14 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
         
         {/* Overlay */}
         <motion.div
-          className="absolute inset-0 bg-black/60 flex items-center justify-center space-x-4"
+          className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: isHovered ? 1 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          {project.links.live && (
-            <button
-              className="px-3 py-2 rounded bg-white/20 hover:bg-white/30 text-white backdrop-blur-sm"
-              onClick={() => window.open(project.links.live, '_blank')}
-            >
-              <ExternalLink className="w-4 h-4 mr-2" />
-              Live
-            </button>
-          )}
-          {project.links.github && (
-            <button
-              className="px-3 py-2 rounded border border-white/30 text-white hover:bg-white/10 backdrop-blur-sm"
-              onClick={() => window.open(project.links.github, '_blank')}
-            >
-              <Github className="w-4 h-4 mr-2" />
-              Code
-            </button>
-          )}
-          {project.links.demo && (
-            <button
-              className="px-3 py-2 rounded bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
-              onClick={() => window.open(project.links.demo, '_blank')}
-            >
-              <Play className="w-4 h-4 mr-2" />
-              Demo
-            </button>
-          )}
+          <div className="text-center">
+            <p className="text-white font-semibold text-sm">View Project Details</p>
+          </div>
         </motion.div>
 
         {/* Category Badge */}
