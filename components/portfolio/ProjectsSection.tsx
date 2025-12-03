@@ -59,16 +59,63 @@ const projects = [
   },
   {
     id: 6,
+    title: 'Time Series Forecasting with ARIMA & Prophet',
+    description: 'Implemented ARIMA and Facebook Prophet models for financial time series forecasting. Achieved MAPE of 4.2% for cryptocurrency price predictions with automated hyperparameter tuning.',
+    image: 'https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg',
+    technologies: ['Python', 'Prophet', 'Statsmodels', 'Pandas', 'Plotly', 'Keras'],
+    category: 'Machine Learning',
+    featured: false,
+    links: {}
+  },
+  {
+    id: 7,
+    title: 'Immersive 3D Portfolio',
+    description: 'A cutting-edge portfolio website featuring WebGL animations, particle systems, and interactive 3D elements built with Three.js and React.',
+    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
+    technologies: ['React', 'Three.js', 'WebGL', 'GSAP', 'Tailwind CSS'],
+    category: '3D/WebGL',
+    featured: true,
+    links: {}
+  },
+  {
+    id: 8,
+    title: 'E-Commerce Platform',
+    description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and advanced analytics dashboard.',
+    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
+    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Redis'],
+    category: 'Full-Stack',
+    featured: true,
+    links: {}
+  },
+  {
+    id: 9,
+    title: 'AI-Powered Chat App',
+    description: 'Real-time messaging application with AI-powered features, voice recognition, and smart reply suggestions.',
+    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
+    technologies: ['React Native', 'Socket.io', 'OpenAI', 'Firebase', 'TensorFlow'],
+    category: 'Full-Stack',
+    featured: false,
+    links: {}
+  },
+  {
+    id: 10,
+    title: 'VR Experience Platform',
+    description: 'Virtual reality web platform for immersive experiences using WebXR, spatial audio, and haptic feedback.',
+    image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
+    technologies: ['A-Frame', 'WebXR', 'Three.js', 'Web Audio API', 'WebRTC'],
+    category: '3D/WebGL',
+    featured: true,
+    links: {}
+  },
+  {
+    id: 11,
     title: 'Smart Home Dashboard',
     description: 'IoT dashboard for smart home automation with real-time monitoring, scheduling, and energy optimization.',
     image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
     technologies: ['React', 'Node.js', 'MQTT', 'InfluxDB', 'Docker'],
-    category: 'IoT',
+    category: 'Full-Stack',
     featured: false,
-    links: {
-      live: 'https://smarthome.example.com',
-      github: 'https://github.com/alexchen/smart-home-dashboard'
-    }
+    links: {}
   }
 ];
 
