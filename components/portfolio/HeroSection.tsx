@@ -102,16 +102,16 @@ export function HeroSection() {
           transition={{ duration: 1, delay: 1 }}
         >
           <div className="flex flex-col items-center space-y-2">
-            <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"></div>
-            <span>Full-Stack</span>
+            <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full"></div>
+            <span>Quantitative</span>
           </div>
           <div className="flex flex-col items-center space-y-2">
-            <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></div>
-            <span>3D/WebGL</span>
+            <div className="w-3 h-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+            <span>Machine Learning</span>
           </div>
           <div className="flex flex-col items-center space-y-2">
-            <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full"></div>
-            <span>UI/UX</span>
+            <div className="w-3 h-3 bg-gradient-to-r from-teal-500 to-green-500 rounded-full"></div>
+            <span>Data Science</span>
           </div>
         </motion.div>
       </motion.div>
