@@ -25,16 +25,20 @@ export function HeroSection() {
   };
 
   return (
-    <section 
+    <section
       id="home"
       ref={containerRef}
-      className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-950 via-black to-gray-900"
     >
-      {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-cyan-900/20 animate-pulse" />
-      
-      {/* Simplified animated gradient background only */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-cyan-900/20 animate-pulse" />
+      {/* Animated gradient background - Data Science theme */}
+      <div className="absolute inset-0 bg-gradient-to-br from-green-900/30 via-black to-emerald-900/30 animate-pulse" />
+
+      {/* Additional animated gradient layers */}
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-green-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-1/3 w-96 h-96 bg-teal-500/10 rounded-full mix-blend-screen filter blur-3xl animate-blob animation-delay-4000"></div>
+      </div>
 
       {/* Content */}
       <motion.div 
