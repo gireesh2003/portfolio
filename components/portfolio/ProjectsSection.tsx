@@ -29,16 +29,13 @@ const projects = [
   },
   {
     id: 3,
-    title: 'AI-Powered Chat App',
-    description: 'Real-time messaging application with AI-powered features, voice recognition, and smart reply suggestions.',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-    technologies: ['React Native', 'Socket.io', 'OpenAI', 'Firebase', 'TensorFlow'],
-    category: 'Mobile',
-    featured: false,
-    links: {
-      live: 'https://chatai.example.com',
-      github: 'https://github.com/alexchen/ai-chat-app'
-    }
+    title: 'Market Sentiment Analysis Tool',
+    description: 'NLP-based sentiment analysis engine that processes financial news and social media to predict market trends. Achieved 80% correlation with market movements using transformer models.',
+    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
+    technologies: ['Python', 'BERT', 'NLP', 'BeautifulSoup', 'Tweepy', 'FastAPI'],
+    category: 'Data Science',
+    featured: true,
+    links: {}
   },
   {
     id: 4,
