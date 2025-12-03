@@ -98,14 +98,13 @@ export function AboutSection() {
             >
               <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Started as a curious kid who loved taking apart computers, I've evolved into 
-                a developer who specializes in creating immersive web experiences. My journey 
-                spans from traditional web development to cutting-edge 3D graphics and WebGL.
+                My passion for data science and quantitative finance emerged from fascination with patterns in financial markets.
+                With a strong foundation in mathematics and programming, I've dedicated myself to mastering machine learning,
+                statistical analysis, and algorithmic trading strategies.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I believe in the power of technology to solve real problems and create 
-                meaningful connections. Every project is an opportunity to push boundaries 
-                and explore new possibilities.
+                I believe data-driven insights are the future of finance. Every project is an opportunity to develop advanced models
+                that can predict market movements, optimize portfolios, and identify profitable trading opportunities.
               </p>
             </motion.div>
 
