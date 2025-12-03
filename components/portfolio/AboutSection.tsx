@@ -5,17 +5,17 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Code, Palette, Zap, Globe, Database, Smartphone } from 'lucide-react';
 
 const skills = [
-  { name: 'Frontend Development', level: 95, icon: Code, color: 'from-blue-500 to-cyan-500' },
-  { name: 'UI/UX Design', level: 88, icon: Palette, color: 'from-purple-500 to-pink-500' },
-  { name: '3D/WebGL', level: 82, icon: Zap, color: 'from-yellow-500 to-orange-500' },
-  { name: 'Backend Development', level: 90, icon: Database, color: 'from-green-500 to-teal-500' },
-  { name: 'Mobile Development', level: 75, icon: Smartphone, color: 'from-indigo-500 to-purple-500' },
-  { name: 'Web Performance', level: 92, icon: Globe, color: 'from-red-500 to-pink-500' }
+  { name: 'Machine Learning', level: 92, icon: Code, color: 'from-green-500 to-emerald-500' },
+  { name: 'Statistical Analysis', level: 90, icon: Database, color: 'from-emerald-500 to-teal-500' },
+  { name: 'Quantitative Analysis', level: 88, icon: Zap, color: 'from-teal-500 to-cyan-500' },
+  { name: 'Python Programming', level: 95, icon: Globe, color: 'from-cyan-500 to-blue-500' },
+  { name: 'SQL & Databases', level: 91, icon: Smartphone, color: 'from-blue-500 to-indigo-500' },
+  { name: 'Financial Modeling', level: 87, icon: Palette, color: 'from-indigo-500 to-purple-500' }
 ];
 
 const technologies = [
-  'React', 'Next.js', 'TypeScript', 'Three.js', 'Node.js', 'Python',
-  'WebGL', 'GSAP', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'AWS'
+  'Python', 'SQL', 'TensorFlow', 'Scikit-learn', 'Pandas', 'NumPy',
+  'PyTorch', 'XGBoost', 'LightGBM', 'PostgreSQL', 'R', 'Matplotlib'
 ];
 
 function SkillBar({ skill, index }: { skill: typeof skills[0], index: number }) {
