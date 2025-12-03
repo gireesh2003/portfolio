@@ -75,11 +75,11 @@ export function AboutSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer who loves creating digital experiences that blend 
-            functionality with visual appeal. With expertise in modern web technologies 
-            and a keen eye for design, I bring ideas to life through code.
+            I'm an aspiring quantitative analyst passionate about leveraging data science and machine learning
+            to unlock insights in financial markets. With strong foundations in statistics, Python programming,
+            and machine learning, I build sophisticated models that drive strategic decision-making.
           </p>
         </motion.div>
 
