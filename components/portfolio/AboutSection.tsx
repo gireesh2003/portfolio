@@ -158,11 +158,10 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           {[
-            { number: '10+', label: 'Projects Completed' },
-            
+            { number: '11+', label: 'Projects Completed' },
+            { number: '92%', label: 'ML Model Accuracy' },
             { number: '1+', label: 'Years Experience' },
-
-            { number: '∞', label: 'Lines of Code' }
+            { number: '∞', label: 'Dedication' }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
