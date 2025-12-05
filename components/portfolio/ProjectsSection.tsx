@@ -92,7 +92,7 @@ const projects = [
     category: 'Full-Stack',
     featured: false,
     links: {
-      live: '',
+      live: 'social-media-web-app-k8bf.vercel.app',
       github: 'https://github.com'
     }
   },
@@ -105,7 +105,7 @@ const projects = [
     category: '3D/WebGL',
     featured: false,
     links: {
-      live: '',
+      live: 'vr-platform-two.vercel.app',
       github: 'https://github.com'
     }
   }
