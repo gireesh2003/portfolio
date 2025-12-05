@@ -9,87 +9,79 @@ import Image from 'next/image';
 const projects = [
   {
     id: 1,
-    title: 'Immersive 3D Portfolio',
-    description: 'A cutting-edge portfolio website featuring WebGL animations, particle systems, and interactive 3D elements built with Three.js and React.',
-    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-    technologies: ['React', 'Three.js', 'WebGL', 'GSAP', 'Tailwind CSS'],
-    category: '3D/WebGL',
+    title: 'Stock Price Prediction using LSTM Neural Networks',
+    description: 'Deep learning model utilizing LSTM architecture to predict stock price movements with 85%+ accuracy. Trained on 5 years of historical data with feature engineering and hyperparameter optimization.',
+    image: 'https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg',
+    technologies: ['Python', 'TensorFlow', 'LSTM', 'Pandas', 'Scikit-learn', 'Matplotlib'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://portfolio.alexchen.dev',
-      github: 'https://github.com/alexchen/3d-portfolio',
-      demo: 'https://demo.alexchen.dev'
+      github: 'https://github.com'
     }
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and advanced analytics dashboard.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Redis'],
-    category: 'Full-Stack',
+    title: 'Credit Risk Assessment ML Model',
+    description: 'Developed a gradient boosting classifier for credit risk prediction achieving 92% ROC-AUC score. Implemented SHAP values for model interpretability and deployed with containerization.',
+    image: 'https://images.pexels.com/photos/3874587/pexels-photo-3874587.jpeg',
+    technologies: ['Python', 'XGBoost', 'LightGBM', 'SHAP', 'PostgreSQL', 'Docker'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://shop.example.com',
-      github: 'https://github.com/alexchen/ecommerce-platform'
+      github: 'https://github.com'
     }
   },
   {
     id: 3,
-    title: 'AI-Powered Chat App',
-    description: 'Real-time messaging application with AI-powered features, voice recognition, and smart reply suggestions.',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-    technologies: ['React Native', 'Socket.io', 'OpenAI', 'Firebase', 'TensorFlow'],
-    category: 'Mobile',
+    title: 'Market Sentiment Analysis Tool',
+    description: 'NLP-based sentiment analysis engine that processes financial news and social media to predict market trends. Achieved 80% correlation with market movements using transformer models.',
+    image: 'https://images.pexels.com/photos/8369249/pexels-photo-8369249.jpeg',
+    technologies: ['Python', 'BERT', 'NLP', 'BeautifulSoup', 'Tweepy', 'FastAPI'],
+    category: 'Data Science',
     featured: false,
     links: {
-      live: 'https://chatai.example.com',
-      github: 'https://github.com/alexchen/ai-chat-app'
+      github: 'https://github.com'
     }
   },
   {
     id: 4,
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for complex data analysis with real-time updates, custom charts, and export capabilities.',
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Viz',
+    title: 'Portfolio Optimization using Modern Portfolio Theory',
+    description: 'Implemented Markowitz efficient frontier algorithm to optimize asset allocation. Backtested strategies across market cycles achieving 15% higher Sharpe ratio than benchmark indices.',
+    image: 'https://images.pexels.com/photos/1092874/pexels-photo-1092874.jpeg',
+    technologies: ['Python', 'NumPy', 'SciPy', 'Pandas', 'Matplotlib', 'Jupyter'],
+    category: 'Quantitative',
     featured: false,
     links: {
-      live: 'https://dashboard.example.com',
-      github: 'https://github.com/alexchen/data-dashboard'
+      github: 'https://github.com'
     }
   },
   {
     id: 5,
-    title: 'VR Experience Platform',
-    description: 'Virtual reality web platform for immersive experiences using WebXR, spatial audio, and haptic feedback.',
-    image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
-    technologies: ['A-Frame', 'WebXR', 'Three.js', 'Web Audio API', 'WebRTC'],
-    category: '3D/WebGL',
+    title: 'Algorithmic Trading Strategy Backtest',
+    description: 'Built quantitative trading strategies using technical indicators and machine learning signals. Backtested across 10+ years of market data with Monte Carlo simulations for risk assessment.',
+    image: 'https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg',
+    technologies: ['Python', 'Backtrader', 'Pandas', 'NumPy', 'Scikit-learn', 'TA-Lib'],
+    category: 'Quantitative',
     featured: true,
     links: {
-      live: 'https://vr.example.com',
-      github: 'https://github.com/alexchen/vr-platform',
-      demo: 'https://vr-demo.example.com'
+      github: 'https://github.com'
     }
   },
   {
     id: 6,
-    title: 'Smart Home Dashboard',
-    description: 'IoT dashboard for smart home automation with real-time monitoring, scheduling, and energy optimization.',
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-    technologies: ['React', 'Node.js', 'MQTT', 'InfluxDB', 'Docker'],
-    category: 'IoT',
+    title: 'Time Series Forecasting with ARIMA & Prophet',
+    description: 'Implemented ARIMA and Facebook Prophet models for financial time series forecasting. Achieved MAPE of 4.2% for cryptocurrency price predictions with automated hyperparameter tuning.',
+    image: 'https://images.pexels.com/photos/3873145/pexels-photo-3873145.jpeg',
+    technologies: ['Python', 'Prophet', 'Statsmodels', 'Pandas', 'Plotly', 'Keras'],
+    category: 'Machine Learning',
     featured: false,
     links: {
-      live: 'https://smarthome.example.com',
-      github: 'https://github.com/alexchen/smart-home-dashboard'
+      github: 'https://github.com'
     }
   }
 ];
 
-const categories = ['All', '3D/WebGL', 'Full-Stack', 'Mobile', 'Data Viz', 'IoT'];
+const categories = ['All', 'Machine Learning', 'Data Science', 'Quantitative'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const [isHovered, setIsHovered] = useState(false);
