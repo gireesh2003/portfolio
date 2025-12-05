@@ -70,9 +70,9 @@ export function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
         >
-          I craft immersive digital experiences through code, design, and creativity.
+          Building intelligent trading systems and machine learning models for financial markets.
           <br />
-          Specializing in modern web technologies and 3D interactive solutions.
+          Specializing in quantitative finance, algorithmic trading, and data science.
         </motion.p>
         
         <motion.div
