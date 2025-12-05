@@ -16,6 +16,7 @@ const projects = [
     category: 'Machine Learning',
     featured: true,
     links: {
+      live: 'https://credit-risk-b32o.vercel.app',
       github: 'https://github.com/gireesh2003/credit-risk-model'
     }
   },
@@ -28,6 +29,7 @@ const projects = [
     category: 'Machine Learning',
     featured: true,
     links: {
+      live: 'https://stock-price-prediction-rust.vercel.app',
       github: 'https://github.com/gireesh2003/stock-prediction'
     }
   },
@@ -40,6 +42,7 @@ const projects = [
     category: 'Quantitative',
     featured: false,
     links: {
+      live: 'https://portfolio-optimiser.vercel.app',
       github: 'https://github.com/gireesh2003/portfolio-optimization'
     }
   },
@@ -52,36 +55,39 @@ const projects = [
     category: 'Data Science',
     featured: false,
     links: {
+      live: 'https://sentiment-ai-kappa.vercel.app',
       github: 'https://github.com/gireesh2003/market-anomaly-detection'
     }
   },
   {
     id: 5,
-    title: 'Algorithmic Trading Bot',
-    description: 'Developed a systematic trading strategy backtester with live paper trading capabilities. Integrated multiple technical analysis indicators and risk management rules.',
-    image: 'https://images.pexels.com/photos/3621881/pexels-photo-3621881.jpeg',
-    technologies: ['Python', 'Pandas', 'MongoDB', 'WebSocket', 'Docker'],
-    category: 'Quantitative',
+    title: 'Social Media Web App',
+    description: 'Full-stack social media platform with real-time messaging, user profiles, feed algorithms, and community features. Built with modern web technologies and optimized for scalability.',
+    image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
+    category: 'Full-Stack',
     featured: true,
     links: {
-      github: 'https://github.com/gireesh2003/algo-trading-bot'
+      live: 'https://social-media-web-app-k8bf.vercel.app',
+      github: 'https://github.com/gireesh2003/social-media-web-app'
     }
   },
   {
     id: 6,
-    title: 'Feature Engineering Pipeline',
-    description: 'Automated feature engineering pipeline for financial data including lag features, technical indicators, and cross-sectional statistics with proper train-test splitting.',
-    image: 'https://images.pexels.com/photos/5280097/pexels-photo-5280097.jpeg',
-    technologies: ['Python', 'Pandas', 'NumPy', 'scikit-learn'],
-    category: 'Data Science',
+    title: 'VR Experience Platform',
+    description: 'Immersive virtual reality web platform for interactive 3D experiences. Features WebXR support, spatial audio, and real-time collaboration for virtual environments.',
+    image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
+    technologies: ['Three.js', 'WebXR', 'React', 'WebGL', 'Babylon.js'],
+    category: 'Full-Stack',
     featured: false,
     links: {
-      github: 'https://github.com/gireesh2003/feature-engineering-pipeline'
+      live: 'https://vr-app-sigma.vercel.app',
+      github: 'https://github.com/gireesh2003/vr-app'
     }
   }
 ];
 
-const categories = ['All', 'Machine Learning', 'Quantitative', 'Data Science'];
+const categories = ['All', 'Machine Learning', 'Quantitative', 'Data Science', 'Full-Stack'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const [isHovered, setIsHovered] = useState(false);
