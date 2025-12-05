@@ -7,10 +7,10 @@ import { Providers } from './providers';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Gireesh  | Creative Developer & Designer',
-  description: 'Full-stack developer specializing in modern web technologies, 3D experiences, and creative digital solutions.',
-  keywords: 'developer, designer, portfolio, React, Three.js, WebGL, creative coding',
-  authors: [{ name: 'Gireesh ' }],
+  title: 'Gireesh Pandya | Aspiring Quant & Data Analyst',
+  description: 'Aspiring Quant & Data Analyst specializing in machine learning, quantitative analysis, algorithmic trading, and financial data science.',
+  keywords: 'data analyst, quant, machine learning, Python, SQL, statistics, finance, algorithmic trading, data science',
+  authors: [{ name: 'Gireesh Pandya' }],
   viewport: 'width=device-width, initial-scale=1',
   themeColor: '#000000',
 };
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning>
         <Providers>
           <div className="min-h-screen bg-black">
             <Navigation />
