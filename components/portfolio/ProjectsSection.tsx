@@ -66,7 +66,7 @@ const projects = [
     image: 'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg',
     technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
     category: 'Full-Stack',
-    featured: true,
+    featured: false,
     links: {
       live: 'https://social-media-web-app-k8bf.vercel.app',
       github: 'https://github.com/gireesh2003/social-media-web-app'
@@ -74,12 +74,25 @@ const projects = [
   },
   {
     id: 6,
+    title: 'Algorithmic Trading Bot',
+    description: 'Developed a systematic trading strategy backtester with live paper trading capabilities. Integrated multiple technical analysis indicators and risk management rules.',
+    image: 'https://images.pexels.com/photos/3621881/pexels-photo-3621881.jpeg',
+    technologies: ['Python', 'Pandas', 'MongoDB', 'WebSocket', 'Docker'],
+    category: 'Quantitative',
+    featured: true,
+    links: {
+      live: 'https://stock-price-prediction-rust.vercel.app',
+      github: 'https://github.com/gireesh2003/algo-trading-bot'
+    }
+  },
+  {
+    id: 7,
     title: 'VR Experience Platform',
     description: 'Immersive virtual reality web platform for interactive 3D experiences. Features WebXR support, spatial audio, and real-time collaboration for virtual environments.',
     image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
     technologies: ['Three.js', 'WebXR', 'React', 'WebGL', 'Babylon.js'],
     category: 'Full-Stack',
-    featured: false,
+    featured: true,
     links: {
       live: 'https://vr-app-sigma.vercel.app',
       github: 'https://github.com/gireesh2003/vr-app'
