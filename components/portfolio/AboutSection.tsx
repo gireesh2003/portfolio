@@ -77,9 +77,9 @@ export function AboutSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer who loves creating digital experiences that blend 
-            functionality with visual appeal. With expertise in modern web technologies 
-            and a keen eye for design, I bring ideas to life through code.
+            I'm a quantitative developer passionate about applying machine learning and data science
+            to solve financial problems. With expertise in algorithmic trading, risk assessment, and
+            predictive modeling, I develop intelligent systems that drive market insights and optimize portfolios.
           </p>
         </motion.div>
 
