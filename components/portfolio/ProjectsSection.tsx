@@ -155,7 +155,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
           )}
           {project.links.demo && (
             <button
-              className="px-3 py-2 rounded bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
+              className="px-3 py-2 rounded bg-green-600/80 hover:bg-green-700/80 text-white backdrop-blur-sm"
               onClick={() => window.open(project.links.demo, '_blank')}
             >
               <Play className="w-4 h-4 mr-2" />
@@ -166,7 +166,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-gradient-to-r from-blue-500/80 to-purple-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
+          <span className="px-3 py-1 bg-gradient-to-r from-green-500/80 to-emerald-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
             {project.category}
           </span>
         </div>
@@ -174,7 +174,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors duration-300">
           {project.title}
         </h3>
         
