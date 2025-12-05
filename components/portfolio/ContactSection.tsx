@@ -11,21 +11,21 @@ const contactInfo = [
     label: 'Email',
     value: 'Gireeshpandya41@gmail.com',
     href: 'mailto:gireeshpandya41@gmail.com',
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-emerald-500 to-cyan-500'
   },
   {
     icon: Phone,
     label: 'Phone',
     value: '+91 7489279904',
     href: 'tel:+917489279904',
-    color: 'from-green-500 to-teal-500'
+    color: 'from-emerald-500 to-teal-500'
   },
   {
     icon: MapPin,
     label: 'Location',
     value: 'Chennai, Tamil Nadu',
     href: 'https://maps.google.com/?q=San+Francisco,CA',
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-teal-500 to-cyan-500'
   }
 ];
 
