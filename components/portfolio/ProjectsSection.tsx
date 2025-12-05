@@ -164,15 +164,6 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
               Code
             </button>
           )}
-          {project.links.demo && (
-            <button
-              className="px-3 py-2 rounded bg-emerald-600/80 hover:bg-emerald-700/80 text-white backdrop-blur-sm"
-              onClick={() => window.open(project.links.demo, '_blank')}
-            >
-              <Play className="w-4 h-4 mr-2" />
-              Demo
-            </button>
-          )}
         </motion.div>
 
         {/* Category Badge */}
