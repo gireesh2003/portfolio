@@ -92,7 +92,7 @@ export function ExperienceSection() {
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4">
                   <div>
                     <h4 className="text-xl font-bold text-white mb-1">{edu.degree}</h4>
-                    <span className="text-green-400 font-semibold">{edu.school}</span>
+                    <span className="text-emerald-400 font-semibold">{edu.school}</span>
                   </div>
                   <div className="flex items-center space-x-1 text-sm text-gray-400 mt-2 sm:mt-0">
                     <Calendar className="w-4 h-4" />
