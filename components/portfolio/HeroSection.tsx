@@ -125,7 +125,7 @@ export function HeroSection() {
       >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <motion.div
-            className="w-1 h-3 bg-gradient-to-b from-blue-400 to-purple-500 rounded-full mt-2"
+            className="w-1 h-3 bg-gradient-to-b from-emerald-400 to-teal-500 rounded-full mt-2"
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           />
