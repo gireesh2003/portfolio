@@ -95,7 +95,7 @@ export function ContactSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Let's Work Together
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Have a project in mind or want to collaborate? I'd love to hear from you. 
             Let's create something amazing together.
