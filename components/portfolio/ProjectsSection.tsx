@@ -78,10 +78,36 @@ const projects = [
     links: {
       github: 'https://github.com'
     }
+  },
+  {
+    id: 7,
+    title: 'Social Media Web App',
+    description: 'Full-stack social networking platform with real-time messaging, user authentication, and dynamic feed management. Integrated with modern web technologies for seamless user experience and scalable architecture.',
+    image: 'https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg',
+    technologies: ['React', 'Next.js', 'Node.js', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
+    category: 'Full-Stack',
+    featured: false,
+    links: {
+      live: '',
+      github: 'https://github.com'
+    }
+  },
+  {
+    id: 8,
+    title: 'VR Experience Platform',
+    description: 'Immersive virtual reality web platform enabling interactive 3D experiences with WebXR support. Features spatial audio, haptic feedback integration, and real-time multiplayer capabilities for engaging VR environments.',
+    image: 'https://images.pexels.com/photos/7974561/pexels-photo-7974561.jpeg',
+    technologies: ['Three.js', 'WebXR', 'A-Frame', 'Web Audio API', 'React Three Fiber', 'GSAP'],
+    category: '3D/WebGL',
+    featured: false,
+    links: {
+      live: '',
+      github: 'https://github.com'
+    }
   }
 ];
 
-const categories = ['All', 'Machine Learning', 'Data Science', 'Quantitative'];
+const categories = ['All', 'Machine Learning', 'Data Science', 'Quantitative', 'Full-Stack', '3D/WebGL'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const [isHovered, setIsHovered] = useState(false);
