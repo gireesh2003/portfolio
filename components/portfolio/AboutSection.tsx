@@ -5,17 +5,15 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Code, Palette, Zap, Globe, Database, Smartphone } from 'lucide-react';
 
 const skills = [
-  { name: 'Frontend Development', level: 95, icon: Code, color: 'from-blue-500 to-cyan-500' },
-  { name: 'UI/UX Design', level: 88, icon: Palette, color: 'from-purple-500 to-pink-500' },
-  { name: '3D/WebGL', level: 82, icon: Zap, color: 'from-yellow-500 to-orange-500' },
-  { name: 'Backend Development', level: 90, icon: Database, color: 'from-green-500 to-teal-500' },
-  { name: 'Mobile Development', level: 75, icon: Smartphone, color: 'from-indigo-500 to-purple-500' },
-  { name: 'Web Performance', level: 92, icon: Globe, color: 'from-red-500 to-pink-500' }
+  { name: 'Machine Learning', level: 92, icon: Code, color: 'from-green-500 to-emerald-500' },
+  { name: 'Statistical Analysis', level: 96, icon: Palette, color: 'from-teal-500 to-cyan-500' },
+  { name: 'Quantitative Analysis', level: 88, icon: Zap, color: 'from-emerald-500 to-green-500' },
+  { name: 'Python Programming', level: 95, icon: Database, color: 'from-blue-500 to-cyan-500' }
 ];
 
 const technologies = [
-  'React', 'Next.js', 'TypeScript', 'Three.js', 'Node.js', 'Python',
-  'WebGL', 'GSAP', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'AWS'
+  'Python', 'XGBoost', 'LightGBM', 'scikit-learn', 'TensorFlow', 'Pandas',
+  'NumPy', 'SciPy', 'PostgreSQL', 'Docker', 'AWS', 'Jupyter'
 ];
 
 function SkillBar({ skill, index }: { skill: typeof skills[0], index: number }) {
@@ -77,9 +75,10 @@ export function AboutSection() {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer who loves creating digital experiences that blend 
-            functionality with visual appeal. With expertise in modern web technologies 
-            and a keen eye for design, I bring ideas to life through code.
+            I'm an aspiring quantitative analyst passionate about leveraging data science and
+            machine learning to unlock insights in financial markets. With strong foundations
+            in statistics, Python programming, and machine learning, I build sophisticated
+            models that drive strategic decision-making.
           </p>
         </motion.div>
 
@@ -98,14 +97,17 @@ export function AboutSection() {
             >
               <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Started as a curious kid who loved taking apart computers, I've evolved into 
-                a developer who specializes in creating immersive web experiences. My journey 
-                spans from traditional web development to cutting-edge 3D graphics and WebGL.
+                My passion for data science and quantitative finance emerged
+                from fascination with patterns in financial markets. With a strong
+                foundation in mathematics and programming, I've dedicated myself
+                to mastering machine learning, statistical analysis, and algorithmic
+                trading strategies.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I believe in the power of technology to solve real problems and create 
-                meaningful connections. Every project is an opportunity to push boundaries 
-                and explore new possibilities.
+                I believe data-driven insights are the future of finance. Every
+                project is an opportunity to develop advanced models that can
+                predict market movements, optimize portfolios, and identify
+                profitable trading opportunities.
               </p>
             </motion.div>
 

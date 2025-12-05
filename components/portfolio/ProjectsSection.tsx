@@ -9,87 +9,98 @@ import Image from 'next/image';
 const projects = [
   {
     id: 1,
-    title: 'Immersive 3D Portfolio',
-    description: 'A cutting-edge portfolio website featuring WebGL animations, particle systems, and interactive 3D elements built with Three.js and React.',
-    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-    technologies: ['React', 'Three.js', 'WebGL', 'GSAP', 'Tailwind CSS'],
-    category: '3D/WebGL',
+    title: 'Credit Risk Assessment ML Model',
+    description: 'Developed a gradient boosting classifier for credit risk prediction achieving 92% ROC-AUC score. Implemented SHAP values for model interpretability and deployed with containerization.',
+    image: 'https://images.pexels.com/photos/18069230/pexels-photo-18069230.png',
+    technologies: ['Python', 'XGBoost', 'SHAP', 'PostgreSQL', 'Docker'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://portfolio.alexchen.dev',
-      github: 'https://github.com/alexchen/3d-portfolio',
-      demo: 'https://demo.alexchen.dev'
+      live: 'https://credit-risk-b32o.vercel.app',
+      github: 'https://github.com/gireesh2003/credit-risk-model'
     }
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and advanced analytics dashboard.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Redis'],
-    category: 'Full-Stack',
+    title: 'Stock Price Prediction System',
+    description: 'Built LSTM neural network for time-series forecasting of stock prices using technical indicators and market microstructure features. Backtested on 10+ years of data.',
+    image: 'https://images.pexels.com/photos/5716032/pexels-photo-5716032.jpeg',
+    technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'AWS'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://shop.example.com',
-      github: 'https://github.com/alexchen/ecommerce-platform'
+      live: 'https://stock-price-prediction-rust.vercel.app',
+      github: 'https://github.com/gireesh2003/stock-prediction'
     }
   },
   {
     id: 3,
-    title: 'AI-Powered Chat App',
-    description: 'Real-time messaging application with AI-powered features, voice recognition, and smart reply suggestions.',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-    technologies: ['React Native', 'Socket.io', 'OpenAI', 'Firebase', 'TensorFlow'],
-    category: 'Mobile',
+    title: 'Portfolio Optimization Algorithm',
+    description: 'Implemented Markowitz mean-variance optimization and Black-Litterman model for dynamic portfolio allocation with risk constraints.',
+    image: 'https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg',
+    technologies: ['Python', 'SciPy', 'NumPy', 'PostgreSQL'],
+    category: 'Quantitative',
     featured: false,
     links: {
-      live: 'https://chatai.example.com',
-      github: 'https://github.com/alexchen/ai-chat-app'
+      live: 'https://portfolio-optimiser.vercel.app',
+      github: 'https://github.com/gireesh2003/portfolio-optimization'
     }
   },
   {
     id: 4,
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for complex data analysis with real-time updates, custom charts, and export capabilities.',
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Viz',
+    title: 'Market Anomaly Detection',
+    description: 'Statistical analysis framework for identifying market anomalies using Z-score tests, Mahalanobis distance, and isolation forests on high-dimensional market data.',
+    image: 'https://images.pexels.com/photos/590045/pexels-photo-590045.jpeg',
+    technologies: ['Python', 'scikit-learn', 'SciPy', 'Jupyter'],
+    category: 'Data Science',
     featured: false,
     links: {
-      live: 'https://dashboard.example.com',
-      github: 'https://github.com/alexchen/data-dashboard'
+      live: 'https://sentiment-ai-kappa.vercel.app',
+      github: 'https://github.com/gireesh2003/market-anomaly-detection'
     }
   },
   {
     id: 5,
-    title: 'VR Experience Platform',
-    description: 'Virtual reality web platform for immersive experiences using WebXR, spatial audio, and haptic feedback.',
-    image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
-    technologies: ['A-Frame', 'WebXR', 'Three.js', 'Web Audio API', 'WebRTC'],
-    category: '3D/WebGL',
-    featured: true,
+    title: 'Social Media Web App',
+    description: 'Full-stack social media platform with real-time messaging, user profiles, feed algorithms, and community features. Built with modern web technologies and optimized for scalability.',
+    image: 'https://images.pexels.com/photos/2228569/pexels-photo-2228569.jpeg',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Tailwind CSS'],
+    category: 'Full-Stack',
+    featured: false,
     links: {
-      live: 'https://vr.example.com',
-      github: 'https://github.com/alexchen/vr-platform',
-      demo: 'https://vr-demo.example.com'
+      live: 'https://social-media-web-app-k8bf.vercel.app',
+      github: 'https://github.com/gireesh2003/social-media-web-app'
     }
   },
   {
     id: 6,
-    title: 'Smart Home Dashboard',
-    description: 'IoT dashboard for smart home automation with real-time monitoring, scheduling, and energy optimization.',
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-    technologies: ['React', 'Node.js', 'MQTT', 'InfluxDB', 'Docker'],
-    category: 'IoT',
-    featured: false,
+    title: 'Algorithmic Trading Bot',
+    description: 'Developed a systematic trading strategy backtester with live paper trading capabilities. Integrated multiple technical analysis indicators and risk management rules.',
+    image: 'https://images.pexels.com/photos/8566464/pexels-photo-8566464.jpeg',
+    technologies: ['Python', 'Pandas', 'MongoDB', 'WebSocket', 'Docker'],
+    category: 'Quantitative',
+    featured: true,
     links: {
-      live: 'https://smarthome.example.com',
-      github: 'https://github.com/alexchen/smart-home-dashboard'
+      live: 'https://stock-price-prediction-rust.vercel.app',
+      github: 'https://github.com/gireesh2003/algo-trading-bot'
+    }
+  },
+  {
+    id: 7,
+    title: 'VR Experience Platform',
+    description: 'Immersive virtual reality web platform for interactive 3D experiences. Features WebXR support, spatial audio, and real-time collaboration for virtual environments.',
+    image: 'https://images.pexels.com/photos/3761262/pexels-photo-3761262.jpeg',
+    technologies: ['Three.js', 'WebXR', 'React', 'WebGL', 'Babylon.js'],
+    category: 'Full-Stack',
+    featured: true,
+    links: {
+      live: 'https://vr-app-sigma.vercel.app',
+      github: 'https://github.com/gireesh2003/vr-app'
     }
   }
 ];
 
-const categories = ['All', '3D/WebGL', 'Full-Stack', 'Mobile', 'Data Viz', 'IoT'];
+const categories = ['All', 'Machine Learning', 'Quantitative', 'Data Science', 'Full-Stack'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -144,7 +155,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
           )}
           {project.links.demo && (
             <button
-              className="px-3 py-2 rounded bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
+              className="px-3 py-2 rounded bg-green-600/80 hover:bg-green-700/80 text-white backdrop-blur-sm"
               onClick={() => window.open(project.links.demo, '_blank')}
             >
               <Play className="w-4 h-4 mr-2" />
@@ -155,7 +166,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-gradient-to-r from-blue-500/80 to-purple-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
+          <span className="px-3 py-1 bg-gradient-to-r from-green-500/80 to-emerald-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
             {project.category}
           </span>
         </div>
@@ -163,7 +174,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-green-400 transition-colors duration-300">
           {project.title}
         </h3>
         
@@ -216,10 +227,11 @@ export function ProjectsSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            A showcase of my recent work spanning web development, 3D graphics, 
-            mobile applications, and creative coding experiments.
+            A showcase of my work spanning quantitative finance, machine learning
+            applications, data science solutions, and full-stack development projects that
+            demonstrate expertise in financial analytics.
           </p>
         </motion.div>
 
@@ -237,7 +249,7 @@ export function ProjectsSection() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg'
                   : 'bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 hover:text-white'
               }`}
             >
@@ -265,7 +277,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
         >
           <button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://github.com/gireesh2003', '_blank')}
           >
             <Github className="w-5 h-5 mr-2 inline" />
