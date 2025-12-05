@@ -155,7 +155,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors duration-300">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors duration-300">
           {project.title}
         </h3>
         
