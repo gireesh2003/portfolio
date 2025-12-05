@@ -63,7 +63,7 @@ export function ExperienceSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Education
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             My academic background and the learning experiences that shaped my skills and passion for technology.
           </p>
@@ -72,7 +72,7 @@ export function ExperienceSection() {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-green-500 to-emerald-500"></div>
 
           {/* Education Cards */}
           <div className="space-y-12 ml-12">
