@@ -9,87 +9,79 @@ import Image from 'next/image';
 const projects = [
   {
     id: 1,
-    title: 'Immersive 3D Portfolio',
-    description: 'A cutting-edge portfolio website featuring WebGL animations, particle systems, and interactive 3D elements built with Three.js and React.',
-    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-    technologies: ['React', 'Three.js', 'WebGL', 'GSAP', 'Tailwind CSS'],
-    category: '3D/WebGL',
+    title: 'Credit Risk Assessment ML Model',
+    description: 'Developed a gradient boosting classifier for credit risk prediction achieving 92% ROC-AUC score. Implemented SHAP values for model interpretability and deployed with containerization.',
+    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg',
+    technologies: ['Python', 'XGBoost', 'SHAP', 'PostgreSQL', 'Docker'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://portfolio.alexchen.dev',
-      github: 'https://github.com/alexchen/3d-portfolio',
-      demo: 'https://demo.alexchen.dev'
+      github: 'https://github.com/gireesh2003/credit-risk-model'
     }
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory, payment processing, and advanced analytics dashboard.',
-    image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'Redis'],
-    category: 'Full-Stack',
+    title: 'Stock Price Prediction System',
+    description: 'Built LSTM neural network for time-series forecasting of stock prices using technical indicators and market microstructure features. Backtested on 10+ years of data.',
+    image: 'https://images.pexels.com/photos/5632399/pexels-photo-5632399.jpeg',
+    technologies: ['Python', 'TensorFlow', 'Pandas', 'NumPy', 'AWS'],
+    category: 'Machine Learning',
     featured: true,
     links: {
-      live: 'https://shop.example.com',
-      github: 'https://github.com/alexchen/ecommerce-platform'
+      github: 'https://github.com/gireesh2003/stock-prediction'
     }
   },
   {
     id: 3,
-    title: 'AI-Powered Chat App',
-    description: 'Real-time messaging application with AI-powered features, voice recognition, and smart reply suggestions.',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-    technologies: ['React Native', 'Socket.io', 'OpenAI', 'Firebase', 'TensorFlow'],
-    category: 'Mobile',
+    title: 'Portfolio Optimization Algorithm',
+    description: 'Implemented Markowitz mean-variance optimization and Black-Litterman model for dynamic portfolio allocation with risk constraints.',
+    image: 'https://images.pexels.com/photos/7314783/pexels-photo-7314783.jpeg',
+    technologies: ['Python', 'SciPy', 'NumPy', 'PostgreSQL'],
+    category: 'Quantitative',
     featured: false,
     links: {
-      live: 'https://chatai.example.com',
-      github: 'https://github.com/alexchen/ai-chat-app'
+      github: 'https://github.com/gireesh2003/portfolio-optimization'
     }
   },
   {
     id: 4,
-    title: 'Data Visualization Dashboard',
-    description: 'Interactive dashboard for complex data analysis with real-time updates, custom charts, and export capabilities.',
-    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Viz',
+    title: 'Market Anomaly Detection',
+    description: 'Statistical analysis framework for identifying market anomalies using Z-score tests, Mahalanobis distance, and isolation forests on high-dimensional market data.',
+    image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg',
+    technologies: ['Python', 'scikit-learn', 'SciPy', 'Jupyter'],
+    category: 'Data Science',
     featured: false,
     links: {
-      live: 'https://dashboard.example.com',
-      github: 'https://github.com/alexchen/data-dashboard'
+      github: 'https://github.com/gireesh2003/market-anomaly-detection'
     }
   },
   {
     id: 5,
-    title: 'VR Experience Platform',
-    description: 'Virtual reality web platform for immersive experiences using WebXR, spatial audio, and haptic feedback.',
-    image: 'https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg',
-    technologies: ['A-Frame', 'WebXR', 'Three.js', 'Web Audio API', 'WebRTC'],
-    category: '3D/WebGL',
+    title: 'Algorithmic Trading Bot',
+    description: 'Developed a systematic trading strategy backtester with live paper trading capabilities. Integrated multiple technical analysis indicators and risk management rules.',
+    image: 'https://images.pexels.com/photos/3621881/pexels-photo-3621881.jpeg',
+    technologies: ['Python', 'Pandas', 'MongoDB', 'WebSocket', 'Docker'],
+    category: 'Quantitative',
     featured: true,
     links: {
-      live: 'https://vr.example.com',
-      github: 'https://github.com/alexchen/vr-platform',
-      demo: 'https://vr-demo.example.com'
+      github: 'https://github.com/gireesh2003/algo-trading-bot'
     }
   },
   {
     id: 6,
-    title: 'Smart Home Dashboard',
-    description: 'IoT dashboard for smart home automation with real-time monitoring, scheduling, and energy optimization.',
-    image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg',
-    technologies: ['React', 'Node.js', 'MQTT', 'InfluxDB', 'Docker'],
-    category: 'IoT',
+    title: 'Feature Engineering Pipeline',
+    description: 'Automated feature engineering pipeline for financial data including lag features, technical indicators, and cross-sectional statistics with proper train-test splitting.',
+    image: 'https://images.pexels.com/photos/5280097/pexels-photo-5280097.jpeg',
+    technologies: ['Python', 'Pandas', 'NumPy', 'scikit-learn'],
+    category: 'Data Science',
     featured: false,
     links: {
-      live: 'https://smarthome.example.com',
-      github: 'https://github.com/alexchen/smart-home-dashboard'
+      github: 'https://github.com/gireesh2003/feature-engineering-pipeline'
     }
   }
 ];
 
-const categories = ['All', '3D/WebGL', 'Full-Stack', 'Mobile', 'Data Viz', 'IoT'];
+const categories = ['All', 'Machine Learning', 'Quantitative', 'Data Science'];
 
 function ProjectCard({ project, index }: { project: typeof projects[0], index: number }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -216,10 +208,11 @@ export function ProjectsSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Featured Projects
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-emerald-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            A showcase of my recent work spanning web development, 3D graphics, 
-            mobile applications, and creative coding experiments.
+            A showcase of my work spanning quantitative finance, machine learning
+            applications, data science solutions, and full-stack development projects that
+            demonstrate expertise in financial analytics.
           </p>
         </motion.div>
 
@@ -237,7 +230,7 @@ export function ProjectsSection() {
               onClick={() => setSelectedCategory(category)}
               className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg'
                   : 'bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 hover:text-white'
               }`}
             >
@@ -265,7 +258,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
         >
           <button
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             onClick={() => window.open('https://github.com/gireesh2003', '_blank')}
           >
             <Github className="w-5 h-5 mr-2 inline" />
