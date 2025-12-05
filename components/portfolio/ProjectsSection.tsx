@@ -16,6 +16,7 @@ const projects = [
     category: 'Machine Learning',
     featured: true,
     links: {
+      live: 'https://stock-price-prediction-rust.vercel.app',
       github: 'https://github.com'
     }
   },
@@ -28,6 +29,7 @@ const projects = [
     category: 'Machine Learning',
     featured: true,
     links: {
+      live: 'https://credit-risk-b32o.vercel.app',
       github: 'https://github.com'
     }
   },
@@ -40,6 +42,7 @@ const projects = [
     category: 'Data Science',
     featured: false,
     links: {
+      live: 'https://sentiment-ai-kappa.vercel.app',
       github: 'https://github.com'
     }
   },
@@ -52,6 +55,7 @@ const projects = [
     category: 'Quantitative',
     featured: false,
     links: {
+      live: 'https://portfolio-optimiser.vercel.app',
       github: 'https://github.com'
     }
   },
