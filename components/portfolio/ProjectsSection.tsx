@@ -166,7 +166,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
           )}
           {project.links.demo && (
             <button
-              className="px-3 py-2 rounded bg-blue-600/80 hover:bg-blue-700/80 text-white backdrop-blur-sm"
+              className="px-3 py-2 rounded bg-emerald-600/80 hover:bg-emerald-700/80 text-white backdrop-blur-sm"
               onClick={() => window.open(project.links.demo, '_blank')}
             >
               <Play className="w-4 h-4 mr-2" />
