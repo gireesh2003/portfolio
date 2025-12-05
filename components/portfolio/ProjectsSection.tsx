@@ -147,7 +147,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
 
         {/* Category Badge */}
         <div className="absolute top-4 left-4">
-          <span className="px-3 py-1 bg-gradient-to-r from-blue-500/80 to-purple-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
+          <span className="px-3 py-1 bg-gradient-to-r from-emerald-500/80 to-teal-500/80 rounded-full text-xs font-medium text-white backdrop-blur-sm">
             {project.category}
           </span>
         </div>
