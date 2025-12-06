@@ -135,6 +135,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0], index: n
           src={project.image}
           alt={project.title}
           fill
+          unoptimized
           className="object-cover transition-transform duration-700 group-hover:scale-110"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
