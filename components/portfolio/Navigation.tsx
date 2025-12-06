@@ -27,8 +27,8 @@ export function Navigation() {
   ];
 
   const socialLinks = [
-    { href: 'https://github.com', icon: Github, label: 'GitHub' },
-    { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://github.com/gireesh2003', icon: Github, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/gireesh-pandya-b64b2324a/', icon: Linkedin, label: 'LinkedIn' },
     { href: 'mailto:hello@alexchen.dev', icon: Mail, label: 'Email' }
   ];
 
