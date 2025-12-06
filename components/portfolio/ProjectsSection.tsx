@@ -24,7 +24,7 @@ const projects = [
     id: 2,
     title: 'Credit Risk Assessment ML Model',
     description: 'Developed a gradient boosting classifier for credit risk prediction achieving 92% ROC-AUC score. Implemented SHAP values for model interpretability and deployed with containerization.',
-    image: 'https://images.pexels.com/photos/8297816/pexels-photo-8297816.jpeg',
+    image: 'https://images.pexels.com/photos/6120207/pexels-photo-6120207.jpeg',
     technologies: ['Python', 'XGBoost', 'LightGBM', 'SHAP', 'PostgreSQL', 'Docker'],
     category: 'Machine Learning',
     featured: true,
