@@ -27,8 +27,8 @@ export function Navigation() {
   ];
 
   const socialLinks = [
-    { href: 'https://github.com', icon: Github, label: 'GitHub' },
-    { href: 'https://linkedin.com', icon: Linkedin, label: 'LinkedIn' },
+    { href: 'https://github.com/gireesh2003', icon: Github, label: 'GitHub' },
+    { href: 'https://www.linkedin.com/in/gireesh-pandya-b64b2324a/', icon: Linkedin, label: 'LinkedIn' },
     { href: 'mailto:hello@alexchen.dev', icon: Mail, label: 'Email' }
   ];
 
@@ -73,7 +73,7 @@ export function Navigation() {
                   className="text-gray-300 hover:text-white transition-colors duration-200 font-medium relative group"
                 >
                   {link.label}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 group-hover:w-full transition-all duration-300"></span>
                 </button>
               ))}
             </div>

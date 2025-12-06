@@ -39,12 +39,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  background: linear-gradient(to bottom, #10b981, #14b8a6);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  background: linear-gradient(to bottom, #059669, #0d9488);
 }
 
 /* Smooth animations */
@@ -93,10 +93,10 @@ body {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
   }
   50% {
-    box-shadow: 0 0 40px rgba(139, 92, 246, 0.8);
+    box-shadow: 0 0 40px rgba(20, 184, 166, 0.8);
   }
 }
 
@@ -118,7 +118,7 @@ body {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #06b6d4);
+  background: linear-gradient(135deg, #10b981, #14b8a6, #06b6d4);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -181,12 +181,12 @@ body {
 
 /* Text selection */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(16, 185, 129, 0.3);
   color: white;
 }
 
 ::-moz-selection {
-  background: rgba(59, 130, 246, 0.3);
+  background: rgba(16, 185, 129, 0.3);
   color: white;
 }
 
@@ -198,7 +198,7 @@ body {
     --card-foreground: 0 0% 100%;
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 100%;
-    --primary: 221 83% 53%;
+    --primary: 160 84% 39%;
     --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -210,7 +210,7 @@ body {
     --destructive-foreground: 0 0% 98%;
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 212 95% 68%;
+    --ring: 160 84% 39%;
     --radius: 0.75rem;
   }
 }

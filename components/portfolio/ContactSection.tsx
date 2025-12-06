@@ -11,21 +11,21 @@ const contactInfo = [
     label: 'Email',
     value: 'Gireeshpandya41@gmail.com',
     href: 'mailto:gireeshpandya41@gmail.com',
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-emerald-500 to-cyan-500'
   },
   {
     icon: Phone,
     label: 'Phone',
     value: '+91 7489279904',
     href: 'tel:+917489279904',
-    color: 'from-green-500 to-teal-500'
+    color: 'from-emerald-500 to-teal-500'
   },
   {
     icon: MapPin,
     label: 'Location',
     value: 'Chennai, Tamil Nadu',
     href: 'https://maps.google.com/?q=San+Francisco,CA',
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-teal-500 to-cyan-500'
   }
 ];
 
@@ -95,7 +95,7 @@ export function ContactSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Let's Work Together
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
             Have a project in mind or want to collaborate? I'd love to hear from you. 
             Let's create something amazing together.
@@ -200,7 +200,7 @@ export function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
+                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 focus:outline-none"
                     placeholder="Your name"
                   />
                 </div>
@@ -215,7 +215,7 @@ export function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
+                    className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 focus:outline-none"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -232,7 +232,7 @@ export function ContactSection() {
                   required
                   value={formData.subject}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none"
+                  className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 focus:outline-none"
                   placeholder="What's this about?"
                 />
               </div>
@@ -248,7 +248,7 @@ export function ContactSection() {
                   rows={6}
                   value={formData.message}
                   onChange={handleInputChange}
-                  className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/20 focus:outline-none resize-none"
+                  className="w-full px-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-400 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500/20 focus:outline-none resize-none"
                   placeholder="Tell me about your project or idea..."
                 />
               </div>
@@ -256,7 +256,7 @@ export function ContactSection() {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center space-x-2">

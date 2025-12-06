@@ -5,17 +5,17 @@ import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Code, Palette, Zap, Globe, Database, Smartphone } from 'lucide-react';
 
 const skills = [
-  { name: 'Frontend Development', level: 95, icon: Code, color: 'from-blue-500 to-cyan-500' },
-  { name: 'UI/UX Design', level: 88, icon: Palette, color: 'from-purple-500 to-pink-500' },
-  { name: '3D/WebGL', level: 82, icon: Zap, color: 'from-yellow-500 to-orange-500' },
-  { name: 'Backend Development', level: 90, icon: Database, color: 'from-green-500 to-teal-500' },
-  { name: 'Mobile Development', level: 75, icon: Smartphone, color: 'from-indigo-500 to-purple-500' },
-  { name: 'Web Performance', level: 92, icon: Globe, color: 'from-red-500 to-pink-500' }
+  { name: 'Machine Learning', level: 95, icon: Code, color: 'from-emerald-500 to-cyan-500' },
+  { name: 'Quantitative Analysis', level: 90, icon: Palette, color: 'from-teal-500 to-emerald-500' },
+  { name: 'Python Development', level: 92, icon: Zap, color: 'from-emerald-400 to-teal-400' },
+  { name: 'Data Science', level: 88, icon: Database, color: 'from-emerald-600 to-teal-600' },
+  { name: 'Financial Modeling', level: 85, icon: Smartphone, color: 'from-teal-500 to-cyan-500' },
+  { name: 'Algorithm Development', level: 93, icon: Globe, color: 'from-emerald-500 to-emerald-400' }
 ];
 
 const technologies = [
-  'React', 'Next.js', 'TypeScript', 'Three.js', 'Node.js', 'Python',
-  'WebGL', 'GSAP', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'AWS'
+  'Python', 'TensorFlow', 'Pandas', 'NumPy', 'XGBoost', 'LightGBM',
+  'SHAP', 'FastAPI', 'PostgreSQL', 'Docker', 'Scikit-learn', 'Matplotlib'
 ];
 
 function SkillBar({ skill, index }: { skill: typeof skills[0], index: number }) {
@@ -75,11 +75,11 @@ export function AboutSection() {
           <h2 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate developer who loves creating digital experiences that blend 
-            functionality with visual appeal. With expertise in modern web technologies 
-            and a keen eye for design, I bring ideas to life through code.
+            I'm a quantitative developer passionate about applying machine learning and data science
+            to solve financial problems. With expertise in algorithmic trading, risk assessment, and
+            predictive modeling, I develop intelligent systems that drive market insights and optimize portfolios.
           </p>
         </motion.div>
 
@@ -98,14 +98,14 @@ export function AboutSection() {
             >
               <h3 className="text-2xl font-bold text-white mb-4">My Journey</h3>
               <p className="text-gray-300 leading-relaxed mb-4">
-                Started as a curious kid who loved taking apart computers, I've evolved into 
-                a developer who specializes in creating immersive web experiences. My journey 
-                spans from traditional web development to cutting-edge 3D graphics and WebGL.
+                Starting with a passion for mathematics and finance, I've evolved into
+                a quantitative developer specializing in machine learning and algorithmic trading. My journey
+                spans from statistical analysis to advanced deep learning models and high-frequency trading strategies.
               </p>
               <p className="text-gray-300 leading-relaxed">
-                I believe in the power of technology to solve real problems and create 
-                meaningful connections. Every project is an opportunity to push boundaries 
-                and explore new possibilities.
+                I believe in the power of data-driven insights to unlock market opportunities and manage risk.
+                Every model is an opportunity to push the boundaries of predictive accuracy
+                and create competitive advantages in financial markets.
               </p>
             </motion.div>
 
@@ -122,7 +122,7 @@ export function AboutSection() {
                 {technologies.map((tech, index) => (
                   <motion.span
                     key={tech}
-                    className="px-4 py-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full text-sm font-medium text-blue-300 border border-blue-500/30 backdrop-blur-sm"
+                    className="px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-teal-500/20 rounded-full text-sm font-medium text-emerald-300 border border-emerald-500/30 backdrop-blur-sm"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
@@ -173,7 +173,7 @@ export function AboutSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">
+              <div className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-emerald-400 to-teal-500 bg-clip-text text-transparent mb-2">
                 {stat.number}
               </div>
               <div className="text-gray-400 font-medium">
